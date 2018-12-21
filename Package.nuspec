@@ -1,20 +1,41 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Package</id>
+    <id>MarkdownViewer</id>
     <version>1.0.0</version>
-    <authors>hosch</authors>
-    <owners>hosch</owners>
-    <licenseUrl>https://unlicense.org/</licenseUrl>
-    <projectUrl>http://PROJECT_URL_HERE_OR_DELETE_THIS_LINE</projectUrl>
-    <iconUrl>http://ICON_URL_HERE_OR_DELETE_THIS_LINE</iconUrl>
+    <authors>Hosch250</authors>
+    <owners>Hosch250</owners>
+    <projectUrl>https://github.com/Hosch250/MarkdownViewer</projectUrl>
+    <licenseUrl>http://unlicense.org</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>Package description</description>
-    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <description>Supports markdown as parsed by Microsoft.Toolkit.Parsers. Includes support for the following markdown blocks:
+
+Headers
+Lists
+Code
+Quotes
+Horizontal lines
+Tables
+
+And the following markdown inlines:
+
+Bold
+Italic
+Strikethrough
+Links
+Images
+Subscript
+Superscript</description>
+    <releaseNotes>Initial release.</releaseNotes>
     <copyright>Copyright 2018</copyright>
-    <tags>Tag1 Tag2</tags>
+    <tags>WPF Markdown</tags>
     <dependencies>
-      <dependency id="SampleDependency" version="1.0" />
+      <dependency id="AvalonEdit" version="5.0.4" />
+      <dependency id="Microsoft.Toolkit" version="5.0.0" />
+      <dependency id="Microsoft.Toolkit.Parsers" version="5.0.0" />
     </dependencies>
   </metadata>
+  <files>
+    <file src="MarkdownViewer\bin\Release\MarkdownViewer.dll" target="lib\NET472\MarkdownViewer.dll" />
+  </files>
 </package>

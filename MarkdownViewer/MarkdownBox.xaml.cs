@@ -179,26 +179,16 @@ namespace MarkdownViewer
             {
                 Background = new SolidColorBrush(Color.FromRgb(0xFF, 0xF8, 0xDC)),
                 BorderBrush = new SolidColorBrush(Color.FromRgb(0xff, 0xeb, 0x8e)),
-                BorderThickness = new Thickness(2, 0, 0, 0)
+                BorderThickness = new Thickness(2, 0, 0, 0),
+                Padding = new Thickness(5)
             };
             var quoteBlocks = GetBlocks(quote.Blocks).ToList();
             for (var i = 0; i < quoteBlocks.Count; i++)
             {
                 var item = quoteBlocks[i];
+                item.Padding = new Thickness(5, 0, 5, 0);
+                item.Margin = new Thickness(0);
                 sectionElement.Blocks.Add(item);
-
-                if (i == 0)
-                {
-                    item.Padding = new Thickness(10, 10, 10, 0);
-                }
-                if (i == quoteBlocks.Count - 1)
-                {
-                    item.Padding = new Thickness(10, 0, 10, 10);
-                }
-                if (i != 0 && i != quoteBlocks.Count - 1)
-                {
-                    item.Padding = new Thickness(10, 0, 10, 0);
-                }
             }
 
             return sectionElement;
