@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MarkdownViewer</id>
-    <version>1.0.0</version>
+    <version>1.1.1</version>
     <authors>Hosch250</authors>
     <owners>Hosch250</owners>
     <projectUrl>https://github.com/Hosch250/MarkdownViewer</projectUrl>
@@ -26,16 +26,21 @@ Links
 Images
 Subscript
 Superscript</description>
-    <releaseNotes>Initial release.</releaseNotes>
+    <releaseNotes>Added Support for .NetCore</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>WPF Markdown</tags>
     <dependencies>
-      <dependency id="AvalonEdit" version="5.0.4" />
-      <dependency id="Microsoft.Toolkit" version="5.0.0" />
-      <dependency id="Microsoft.Toolkit.Parsers" version="5.0.0" />
+      <dependency id="AvalonEdit" version="6.0.1" />
+      <dependency id="Microsoft.Toolkit" version="6.0.0" />
+      <dependency id="Microsoft.Toolkit.Parsers" version="6.0.0" />
     </dependencies>
   </metadata>
   <files>
     <file src="MarkdownViewer\bin\Release\MarkdownViewer.dll" target="lib\NET472\MarkdownViewer.dll" />
+    <file src="MarkdownViewer\bin\Release\MarkdownViewer.pdb" target="lib\NET472\MarkdownViewer.pdb" />
+	
+    <file src="MarkdownViewerCore\bin\Release\netcoreapp3.1\MarkdownViewerCore.deps.json" target="lib\NETCOREAPP3.1\MarkdownViewerCore.deps.json" />
+    <file src="MarkdownViewerCore\bin\Release\netcoreapp3.1\MarkdownViewerCore.dll" target="lib\NETCOREAPP3.1\MarkdownViewerCore.dll" />
+    <file src="MarkdownViewerCore\bin\Release\netcoreapp3.1\MarkdownViewerCore.pdb" target="lib\NETCOREAPP3.1\MarkdownViewerCore.pdb" />
   </files>
 </package>
