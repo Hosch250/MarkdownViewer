@@ -6,7 +6,7 @@
     <authors>Hosch250</authors>
     <owners>Hosch250</owners>
     <projectUrl>https://github.com/Hosch250/MarkdownViewer</projectUrl>
-    <licenseUrl>http://unlicense.org</licenseUrl>
+    <license type="expression">Unlicense</license>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description>Supports markdown as parsed by Microsoft.Toolkit.Parsers. Includes support for the following markdown blocks:
 
