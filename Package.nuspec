@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>MarkdownViewer</id>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <authors>Hosch250</authors>
     <owners>Hosch250</owners>
     <projectUrl>https://github.com/Hosch250/MarkdownViewer</projectUrl>
@@ -26,7 +26,7 @@ Links
 Images
 Subscript
 Superscript</description>
-    <releaseNotes>Added Support for .NetCore</releaseNotes>
+    <releaseNotes>Merged Framework and Core projects</releaseNotes>
     <copyright>Copyright 2018</copyright>
     <tags>WPF Markdown</tags>
     <dependencies>
@@ -36,11 +36,11 @@ Superscript</description>
     </dependencies>
   </metadata>
   <files>
-    <file src="MarkdownViewer\bin\Release\MarkdownViewer.dll" target="lib\NET472\MarkdownViewer.dll" />
-    <file src="MarkdownViewer\bin\Release\MarkdownViewer.pdb" target="lib\NET472\MarkdownViewer.pdb" />
+    <file src="MarkdownViewer\bin\Release\net472\MarkdownViewer.dll" target="lib\NET472\MarkdownViewer.dll" />
+    <file src="MarkdownViewer\bin\Release\net472\MarkdownViewer.pdb" target="lib\NET472\MarkdownViewer.pdb" />
 	
-    <file src="MarkdownViewerCore\bin\Release\netcoreapp3.1\MarkdownViewerCore.deps.json" target="lib\NETCOREAPP3.1\MarkdownViewerCore.deps.json" />
-    <file src="MarkdownViewerCore\bin\Release\netcoreapp3.1\MarkdownViewerCore.dll" target="lib\NETCOREAPP3.1\MarkdownViewerCore.dll" />
-    <file src="MarkdownViewerCore\bin\Release\netcoreapp3.1\MarkdownViewerCore.pdb" target="lib\NETCOREAPP3.1\MarkdownViewerCore.pdb" />
+    <file src="MarkdownViewer\bin\Release\netcoreapp3.1\MarkdownViewer.deps.json" target="lib\NETCOREAPP3.1\MarkdownViewer.deps.json" />
+    <file src="MarkdownViewer\bin\Release\netcoreapp3.1\MarkdownViewer.dll" target="lib\NETCOREAPP3.1\MarkdownViewer.dll" />
+    <file src="MarkdownViewer\bin\Release\netcoreapp3.1\MarkdownViewer.pdb" target="lib\NETCOREAPP3.1\MarkdownViewer.pdb" />
   </files>
 </package>
